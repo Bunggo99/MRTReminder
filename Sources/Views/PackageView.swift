@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SwiftUIView: View {
+public struct PackageView: View {
     public init() {}
     
     @available(iOS 13.0, *)
@@ -16,10 +16,10 @@ struct SwiftUIView: View {
     }
 }
 
-struct SwiftUIView_Previews: PreviewProvider {
+struct PackageView_Previews: PreviewProvider {
     
     @available(iOS 13.0, *)
     static var previews: some View {
-        SwiftUIView()
+        PackageView()
     }
 }
