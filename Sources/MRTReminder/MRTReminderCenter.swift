@@ -61,7 +61,7 @@ public class MRTReminderCenter {
         reminderList.removeAll(where: { $0.ticketId == request.ticketId })
     }
     
-    private func getReminderRequest(ticketId: String) -> MRTReminderRequest? {
+    public func getReminderRequest(ticketId: String) -> MRTReminderRequest? {
         return reminderList.first(where: { $0.ticketId == ticketId } )
     }
 }
